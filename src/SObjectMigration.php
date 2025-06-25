@@ -89,7 +89,7 @@ class SObjectMigration extends Migration
 
   public function translateDouble(Field $field): Column
   {
-    return new Column($field->name, 'double', [
+    return new Column($field->name, 'decimal', [
       'length' => $field->precision,
       'fractional' => $field->scale,
       'nullable' => true,
