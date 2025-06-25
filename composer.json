@@ -1,11 +1,11 @@
 {
-    "name": "blackbricksoftware/laravel-migration-builder-salesforce",
+    "name": "artembabak/laravel-migration-builder-salesforce",
     "description": "Create migration of object structure from Salesforce Org to a local database.",
     "type": "library",
     "require": {
         "php": "^8.4",
         "omniphx/forrest": "^2.11",
-        "blackbricksoftware/laravel-migration-builder": "^11.0",
+        "artembabak/laravel-migration-builder": "^11.0",
         "illuminate/support": "^12.0",
         "illuminate/console": "^12.0"
     },
