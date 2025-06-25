@@ -110,6 +110,14 @@ class SObjectMigration extends Migration
     ]);
   }
 
+  public function translateTime(Field $field): Column
+  {
+    return new Column($field->name, 'string', [
+        'length' => 16,
+        'nullable' => true,
+    ]);
+  }
+
   public function translateBase64(Field $field): Column
   {
     // probably could be smarter here, but I do not have an example
