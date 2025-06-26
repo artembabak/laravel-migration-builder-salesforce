@@ -24,6 +24,7 @@ class SObjectMigration extends Migration
     foreach ($sobject->fields as $field) {
 
       $translateMethod = $this->findSObjectFieldToColumnTranslation($field);
+      $field->name = Str::lower($field->name);
       $column = $this->$translateMethod($field);
 
       if ($field->unique) {
